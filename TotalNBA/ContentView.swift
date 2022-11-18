@@ -17,8 +17,8 @@ struct ContentView: View {
         }
         HStack{
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
+                Image("sas")
+                    .imageScale(.small)
                     .foregroundColor(.green)
                 Text("123")
                     .font(.title)
@@ -27,15 +27,15 @@ struct ContentView: View {
             
             VStack {
                 Text("251")
-                    .font(.title)
+                    .font(.subheadline)
                     .foregroundColor(.red)
                 Text("9")
-                    .font(.title)
+                    .font(.subheadline)
                     .foregroundColor(.red)
             }
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
+                Image("sac")
+                    .imageScale(.small)
                     .foregroundColor(.blue)
                 Text("133")
                     .font(.title)
