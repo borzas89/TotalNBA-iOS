@@ -1,0 +1,72 @@
+[
+   {
+      "id":1365,
+      "commonMatchId":"cee0d728-2a96-4107-854e-fb1771fff4b5",
+      "homeTeamName":"Toronto Raptors",
+      "awayTeamName":"Chicago Bulls",
+      "homeTeamAlias":"TOR",
+      "awayTeamAlias":"CHI",
+      "predictedAwayScore":108.68,
+      "predictedHomeScore":115.14,
+      "predictedTotal":223.82,
+      "spread":6.46,
+      "matchDate":"2022-10-09T22:00:00.000+0000",
+      "matchString":"10-10-2022"
+   },
+   {
+      "id":1366,
+      "commonMatchId":"0ef7fadf-c7f8-42dd-8b6b-49fcbd36b2b7",
+      "homeTeamName":"San Antonio Spurs",
+      "awayTeamName":"New Orleans Pelicans",
+      "homeTeamAlias":"SAS",
+      "awayTeamAlias":"NOP",
+      "predictedAwayScore":120.63,
+      "predictedHomeScore":110.15,
+      "predictedTotal":230.78,
+      "spread":-10.48,
+      "matchDate":"2022-10-09T23:00:00.000+0000",
+      "matchString":"10-10-2022"
+   },
+   {
+      "id":1367,
+      "commonMatchId":"86d129d6-38eb-4674-9927-32fec94aa51e",
+      "homeTeamName":"Golden State Warriors",
+      "awayTeamName":"Los Angeles Lakers",
+      "homeTeamAlias":"GSW",
+      "awayTeamAlias":"LAL",
+      "predictedAwayScore":105.45,
+      "predictedHomeScore":130.24,
+      "predictedTotal":235.69,
+      "spread":24.79,
+      "matchDate":"2022-10-10T00:30:00.000+0000",
+      "matchString":"10-10-2022"
+   },
+   {
+      "id":1368,
+      "commonMatchId":"9bdf1a0d-226f-4b71-80a7-bafbfa39d3b2",
+      "homeTeamName":"Sacramento Kings",
+      "awayTeamName":"Portland Trail Blazers",
+      "homeTeamAlias":"SAC",
+      "awayTeamAlias":"POR",
+      "predictedAwayScore":111.28,
+      "predictedHomeScore":113.85,
+      "predictedTotal":225.13,
+      "spread":2.56,
+      "matchDate":"2022-10-10T01:00:00.000+0000",
+      "matchString":"10-10-2022"
+   },
+   {
+      "id":1369,
+      "commonMatchId":"06305c0a-70bc-4a5d-aa80-6236147407fd",
+      "homeTeamName":"LA Clippers",
+      "awayTeamName":"Minnesota Timberwolves",
+      "homeTeamAlias":"LAC",
+      "awayTeamAlias":"MIN",
+      "predictedAwayScore":107.38,
+      "predictedHomeScore":103.89,
+      "predictedTotal":211.26,
+      "spread":-3.49,
+      "matchDate":"2022-10-10T02:30:00.000+0000",
+      "matchString":"10-10-2022"
+   }
+]
