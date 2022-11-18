@@ -19,6 +19,9 @@ struct PredictionRow: View {
                }
                HStack{
                    VStack {
+                       Image(prediction.awayTeamAlias.lowercased() )
+                        .resizable()
+                        .frame(width: 90, height: 90)
                        Text("\(prediction.predictedAwayScore, specifier: "%.2f")")
                            .font(.title)
                            .foregroundColor(.black)
@@ -33,9 +36,9 @@ struct PredictionRow: View {
                            .foregroundColor(.black)
                    }
                    VStack {
-                       Image("AppIcon")
-                           .imageScale(.small)
-                           .foregroundColor(.black)
+                       Image( prediction.homeTeamAlias.lowercased())
+                        .resizable()
+                        .frame(width: 90, height: 90)
                        Text("\(prediction.predictedHomeScore, specifier: "%.2f")")
                            .font(.title)
                            .foregroundColor(.black)
