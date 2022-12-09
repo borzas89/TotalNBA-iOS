@@ -11,39 +11,42 @@ struct PredictionRow: View {
     var prediction: Prediction
 
     var body: some View {
+    VStack {
         HStack{
             Text(prediction.awayTeamName + " @ " + prediction.homeTeamName)
-                       .font(.title)
+                           .font(.subheadline)
+                           .foregroundColor(.black)
+        }
+        HStack{
+               VStack {
+                   Image(prediction.awayTeamAlias.lowercased() )
+                    .resizable()
+                    .frame(width: 90, height: 90)
+                   Text("\(prediction.predictedAwayScore, specifier: "%.2f")")
+                       .font(.subheadline)
                        .foregroundColor(.black)
-                       .padding()
                }
-               HStack{
-                   VStack {
-                       Image(prediction.awayTeamAlias.lowercased() )
-                        .resizable()
-                        .frame(width: 90, height: 90)
-                       Text("\(prediction.predictedAwayScore, specifier: "%.2f")")
-                           .font(.title)
-                           .foregroundColor(.black)
-                   }
-                   
-                   VStack {
-                       Text("\(prediction.predictedTotal, specifier: "%.2f")")
-                           .font(.subheadline)
-                           .foregroundColor(.black)
-                       Text("\(prediction.spread, specifier: "%.2f")")
-                           .font(.subheadline)
-                           .foregroundColor(.black)
-                   }
-                   VStack {
-                       Image( prediction.homeTeamAlias.lowercased())
-                        .resizable()
-                        .frame(width: 90, height: 90)
-                       Text("\(prediction.predictedHomeScore, specifier: "%.2f")")
-                           .font(.title)
-                           .foregroundColor(.black)
-                   }
-               } .padding()
+                Spacer()
+               VStack {
+                   Text("\(prediction.predictedTotal, specifier: "%.2f")")
+                       .font(.subheadline)
+                       .foregroundColor(.black)
+                   Text("\(prediction.spread, specifier: "%.2f")")
+                       .font(.subheadline)
+                       .foregroundColor(.black)
+               }
+                Spacer()
+               VStack {
+                   Image( prediction.homeTeamAlias.lowercased())
+                    .resizable()
+                    .frame(width: 90, height: 90)
+                   Text("\(prediction.predictedHomeScore, specifier: "%.2f")")
+                       .font(.subheadline)
+                       .foregroundColor(.black)
+               }
+           }
+    }.padding()
+            
 
     }
 }

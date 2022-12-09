@@ -10,7 +10,6 @@
 		A7259E9B2927BAC000869A6A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A7259E9A2927BAC000869A6A /* FirebaseAnalytics */; };
 		A7259E9D2927BAC000869A6A /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A7259E9C2927BAC000869A6A /* FirebaseAppDistribution-Beta */; };
 		A7259E9F2927BAC000869A6A /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = A7259E9E2927BAC000869A6A /* FirebaseCrashlytics */; };
-		A7259EA12927BE2E00869A6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7259EA02927BE2D00869A6A /* GoogleService-Info.plist */; };
 		A75581E629279DC200128BAE /* TotalNBAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75581E529279DC200128BAE /* TotalNBAApp.swift */; };
 		A75581E829279DC200128BAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75581E729279DC200128BAE /* ContentView.swift */; };
 		A75581EA29279DC400128BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75581E929279DC400128BAE /* Assets.xcassets */; };
@@ -18,11 +17,15 @@
 		A75581F729279DC400128BAE /* TotalNBATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75581F629279DC400128BAE /* TotalNBATests.swift */; };
 		A755820129279DC400128BAE /* TotalNBAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A755820029279DC400128BAE /* TotalNBAUITests.swift */; };
 		A755820329279DC400128BAE /* TotalNBAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A755820229279DC400128BAE /* TotalNBAUITestsLaunchTests.swift */; };
+		A76750F5292FC55000DFCC0F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A76750F4292FC55000DFCC0F /* Alamofire */; };
 		A7BB48F42927FFE80020802C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F32927FFE80020802C /* ModelData.swift */; };
 		A7BB48F6292800370020802C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F5292800370020802C /* Prediction.swift */; };
 		A7BB48F8292802100020802C /* PredictionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F7292802100020802C /* PredictionList.swift */; };
 		A7BB48FA2928061C0020802C /* PredictionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F92928061C0020802C /* PredictionRow.swift */; };
 		A7BB48FB2928091C0020802C /* predictionData.json in Resources */ = {isa = PBXBuildFile; fileRef = A7BB48F22927FFBA0020802C /* predictionData.json */; };
+		A7BB48FE292815EF0020802C /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = A7BB48FD292815EF0020802C /* FSCalendar */; };
+		A7C8489429367DAA0039E3BD /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8489329367DAA0039E3BD /* ErrorView.swift */; };
+		A7C8489629367E9A0039E3BD /* Predictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8489529367E9A0039E3BD /* Predictions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A7259EA02927BE2D00869A6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A75581E229279DC200128BAE /* TotalNBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotalNBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75581E529279DC200128BAE /* TotalNBAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNBAApp.swift; sourceTree = "<group>"; };
 		A75581E729279DC200128BAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,8 @@
 		A7BB48F5292800370020802C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
 		A7BB48F7292802100020802C /* PredictionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionList.swift; sourceTree = "<group>"; };
 		A7BB48F92928061C0020802C /* PredictionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionRow.swift; sourceTree = "<group>"; };
+		A7C8489329367DAA0039E3BD /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		A7C8489529367E9A0039E3BD /* Predictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76750F5292FC55000DFCC0F /* Alamofire in Frameworks */,
 				A7259E9F2927BAC000869A6A /* FirebaseCrashlytics in Frameworks */,
+				A7BB48FE292815EF0020802C /* FSCalendar in Frameworks */,
 				A7259E9B2927BAC000869A6A /* FirebaseAnalytics in Frameworks */,
 				A7259E9D2927BAC000869A6A /* FirebaseAppDistribution-Beta in Frameworks */,
 			);
@@ -115,7 +121,6 @@
 				A7BB48F12927FF160020802C /* Resources */,
 				A7BB48F02927FF0F0020802C /* Model */,
 				A7BB48EF2927FEFB0020802C /* Views */,
-				A7259EA02927BE2D00869A6A /* GoogleService-Info.plist */,
 				A75581E529279DC200128BAE /* TotalNBAApp.swift */,
 				A75581E929279DC400128BAE /* Assets.xcassets */,
 				A75581EB29279DC400128BAE /* Preview Content */,
@@ -154,6 +159,7 @@
 				A75581E729279DC200128BAE /* ContentView.swift */,
 				A7BB48F7292802100020802C /* PredictionList.swift */,
 				A7BB48F92928061C0020802C /* PredictionRow.swift */,
+				A7C8489329367DAA0039E3BD /* ErrorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +169,7 @@
 			children = (
 				A7BB48F32927FFE80020802C /* ModelData.swift */,
 				A7BB48F5292800370020802C /* Prediction.swift */,
+				A7C8489529367E9A0039E3BD /* Predictions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +202,8 @@
 				A7259E9A2927BAC000869A6A /* FirebaseAnalytics */,
 				A7259E9C2927BAC000869A6A /* FirebaseAppDistribution-Beta */,
 				A7259E9E2927BAC000869A6A /* FirebaseCrashlytics */,
+				A7BB48FD292815EF0020802C /* FSCalendar */,
+				A76750F4292FC55000DFCC0F /* Alamofire */,
 			);
 			productName = TotalNBA;
 			productReference = A75581E229279DC200128BAE /* TotalNBA.app */;
@@ -270,6 +279,8 @@
 			mainGroup = A75581D929279DC200128BAE;
 			packageReferences = (
 				A7259E992927BAC000869A6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A7BB48FC292815EF0020802C /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				A76750F3292FC54F00DFCC0F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = A75581E329279DC200128BAE /* Products */;
 			projectDirPath = "";
@@ -290,7 +301,6 @@
 				A75581ED29279DC400128BAE /* Preview Assets.xcassets in Resources */,
 				A75581EA29279DC400128BAE /* Assets.xcassets in Resources */,
 				A7BB48FB2928091C0020802C /* predictionData.json in Resources */,
-				A7259EA12927BE2E00869A6A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +328,8 @@
 				A75581E829279DC200128BAE /* ContentView.swift in Sources */,
 				A7BB48F42927FFE80020802C /* ModelData.swift in Sources */,
 				A7BB48F8292802100020802C /* PredictionList.swift in Sources */,
+				A7C8489429367DAA0039E3BD /* ErrorView.swift in Sources */,
+				A7C8489629367E9A0039E3BD /* Predictions.swift in Sources */,
 				A7BB48FA2928061C0020802C /* PredictionRow.swift in Sources */,
 				A75581E629279DC200128BAE /* TotalNBAApp.swift in Sources */,
 				A7BB48F6292800370020802C /* Prediction.swift in Sources */,
@@ -651,6 +663,22 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		A76750F3292FC54F00DFCC0F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+		A7BB48FC292815EF0020802C /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -668,6 +696,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A7259E992927BAC000869A6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
+		};
+		A76750F4292FC55000DFCC0F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A76750F3292FC54F00DFCC0F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A7BB48FD292815EF0020802C /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7BB48FC292815EF0020802C /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
