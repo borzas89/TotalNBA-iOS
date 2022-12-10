@@ -21,7 +21,7 @@ struct PredictionRow: View {
                VStack {
                    Image(prediction.awayTeamAlias.lowercased() )
                     .resizable()
-                    .frame(width: 90, height: 90)
+                    .aspectRatio(contentMode: .fit)
                    Text("\(prediction.predictedAwayScore, specifier: "%.2f")")
                        .font(.subheadline)
                        .foregroundColor(.black)
@@ -38,8 +38,8 @@ struct PredictionRow: View {
                 Spacer()
                VStack {
                    Image( prediction.homeTeamAlias.lowercased())
-                    .resizable()
-                    .frame(width: 90, height: 90)
+                       .resizable()
+                       .aspectRatio(contentMode: .fit)
                    Text("\(prediction.predictedHomeScore, specifier: "%.2f")")
                        .font(.subheadline)
                        .foregroundColor(.black)

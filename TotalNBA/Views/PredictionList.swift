@@ -10,12 +10,14 @@ import FSCalendar
 
 struct PredictionList: View {
     @State var predictions: [Prediction] = []
-    
+    @State var dateStr: String
     var body: some View {
             List(predictions) { prediction in
                 PredictionRow(prediction: prediction)
+                    .listRowSeparator(.hidden)
             }.onAppear{
-                getPredictionData(url: "https://totalnba.herokuapp.com/api/prediction/day/10-12-2022/") { predictions in
+                getPredictionData(url:
+                                    "https://totalnba.herokuapp.com/api/prediction/day/\(self.dateStr)/") { predictions in
                     self.predictions = predictions
                 }
             }
@@ -25,7 +27,7 @@ struct PredictionList: View {
 struct PredictionList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE (2nd generation)", "iPhone XS Max"], id: \.self) { deviceName in
-            PredictionList()
+            PredictionList(dateStr: "date")
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
