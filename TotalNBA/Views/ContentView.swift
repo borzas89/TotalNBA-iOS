@@ -29,8 +29,9 @@ struct ContentView: View {
                         .shadow(color: Color.black.opacity(0.2), radius: 6,
                                 x:0.0, y:0.0)
                 ).frame(height: 200)
+            
             Text(selectedDateStr)
-            PredictionList(dateStr: selectedDateStr)
+            PredictionList(selectedDate: $selectedDate)
         }
     }
 }
@@ -39,7 +40,7 @@ struct CalendarRepresentable: UIViewRepresentable {
     typealias UIViewType = FSCalendar
     @Binding var selectedDate: Date
     var calendar = FSCalendar()
-    
+
     func updateUIView(_ uiView: FSCalendar, context: Context) {}
     
     func makeUIView(context: Context) -> FSCalendar {
@@ -66,9 +67,7 @@ struct CalendarRepresentable: UIViewRepresentable {
         }
         
         func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-            
             parent.selectedDate = date
-            
         }
         
     }

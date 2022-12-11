@@ -7,8 +7,8 @@
 
 import Foundation
 
-class NetworkManager: ObservableObject{
-    @Published var dateString: String = "" {
+class NetworkManager: ObservableObject {
+    @Published var dateString: String = "11-12-2022" {
          didSet {
              fetchData()
          }
@@ -16,7 +16,7 @@ class NetworkManager: ObservableObject{
      @Published var predictions = [Prediction]()
     
     func fetchData() {
-            let urlString = "https://totalnba.herokuapp.com/api/prediction/day/\(dateString)"
+            let urlString = "https://totalnba.herokuapp.com/api/prediction/day/\(dateString)/"
             if let url = URL(string: urlString){
                 let session = URLSession(configuration: .default)
                 let task = session.dataTask(with: url) { (data, response, error) in

@@ -9,17 +9,28 @@ import SwiftUI
 import FSCalendar
 
 struct PredictionList: View {
+    @ObservedObject var networkManager = NetworkManager()
     @State var predictions: [Prediction] = []
-    @State var dateStr: String
+    @Binding var selectedDate: Date
+    var selectedDateStr: String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        dateFormatter.locale = Locale.current
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        return dateFormatter.string(from: selectedDate)
+    }
+    
+
     var body: some View {
-            List(predictions) { prediction in
+        Text(selectedDateStr)
+        TextField(selectedDateStr, text: $networkManager.dateString)
+        List(networkManager.predictions) { prediction in
                 PredictionRow(prediction: prediction)
                     .listRowSeparator(.hidden)
             }.onAppear{
-                getPredictionData(url:
-                                    "https://totalnba.herokuapp.com/api/prediction/day/\(self.dateStr)/") { predictions in
-                    self.predictions = predictions
-                }
+                self.networkManager.fetchData()
+                
             }
     }
 }
@@ -27,7 +38,7 @@ struct PredictionList: View {
 struct PredictionList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE (2nd generation)", "iPhone XS Max"], id: \.self) { deviceName in
-            PredictionList(dateStr: "date")
+            PredictionList(selectedDate: .constant(Date()))
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
@@ -44,7 +55,6 @@ func getPredictionData(url: String, completion: @escaping ([Prediction]) -> ()) 
         // decoding JSON
         do {
             let predictions = try JSONDecoder().decode([Prediction].self, from: data!)
-            
             // returning predictions
             completion(predictions)
         } catch {

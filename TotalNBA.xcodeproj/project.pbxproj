@@ -19,6 +19,7 @@
 		A755820329279DC400128BAE /* TotalNBAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A755820229279DC400128BAE /* TotalNBAUITestsLaunchTests.swift */; };
 		A76750F5292FC55000DFCC0F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A76750F4292FC55000DFCC0F /* Alamofire */; };
 		A767C7D0294538DB00026DAD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7CF294538DB00026DAD /* NetworkManager.swift */; };
+		A767C7D22945411D00026DAD /* PlayerStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7D12945411D00026DAD /* PlayerStat.swift */; };
 		A7BB48F42927FFE80020802C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F32927FFE80020802C /* ModelData.swift */; };
 		A7BB48F6292800370020802C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F5292800370020802C /* Prediction.swift */; };
 		A7BB48F8292802100020802C /* PredictionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F7292802100020802C /* PredictionList.swift */; };
@@ -58,6 +59,7 @@
 		A755820029279DC400128BAE /* TotalNBAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNBAUITests.swift; sourceTree = "<group>"; };
 		A755820229279DC400128BAE /* TotalNBAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNBAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A767C7CF294538DB00026DAD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A767C7D12945411D00026DAD /* PlayerStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStat.swift; sourceTree = "<group>"; };
 		A7BB48F22927FFBA0020802C /* predictionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = predictionData.json; sourceTree = "<group>"; };
 		A7BB48F32927FFE80020802C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A7BB48F5292800370020802C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				A7BB48F32927FFE80020802C /* ModelData.swift */,
 				A7BB48F5292800370020802C /* Prediction.swift */,
 				A7C8489529367E9A0039E3BD /* Predictions.swift */,
+				A767C7D12945411D00026DAD /* PlayerStat.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				A7C8489629367E9A0039E3BD /* Predictions.swift in Sources */,
 				A7BB48FA2928061C0020802C /* PredictionRow.swift in Sources */,
 				A75581E629279DC200128BAE /* TotalNBAApp.swift in Sources */,
+				A767C7D22945411D00026DAD /* PlayerStat.swift in Sources */,
 				A7BB48F6292800370020802C /* Prediction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
