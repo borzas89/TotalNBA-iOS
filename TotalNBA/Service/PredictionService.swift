@@ -10,12 +10,22 @@ import Combine
 
 class PredictionService {
     @Published var predictions: [Prediction] = []
-    @Published var dateString: String = "12-12-2022"
+    @Published var dateString: String = ""
     
     var predictionSubscription: AnyCancellable?
     
+    var selectedDateStr: String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        dateFormatter.locale = Locale.current
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        return dateFormatter.string(from: Date())
+    }
+    
     init() {
-        getPredictions(dateString: dateString)
+        self.dateString = selectedDateStr
+        getPredictions(dateString: selectedDateStr)
     }
     
     func getPredictions(dateString: String) {

@@ -11,11 +11,10 @@ import Combine
 class PredictionViewModel : ObservableObject{
     @Published var predictions: [Prediction] = []
     @Published var isLoading: Bool = false
-    @Published var searchText: String = "15-12-2022"
+    @Published var searchText: String = ""
     
     private var cancellables = Set<AnyCancellable>()
     private let predictionService = PredictionService()
-
     
     init() {
         addSubscribers()

@@ -12,14 +12,6 @@ import FSCalendar
 struct ContentView: View {
     @EnvironmentObject private var vm: PredictionViewModel
     @State var selectedDate: Date = Date()
-    var selectedDateStr: String{
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .none
-        dateFormatter.locale = Locale.current
-        dateFormatter.dateFormat = "dd-MM-yyyy"
-        return dateFormatter.string(from: selectedDate)
-    }
     
     var body: some View {
         VStack{
