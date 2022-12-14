@@ -18,8 +18,10 @@
 		A755820129279DC400128BAE /* TotalNBAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A755820029279DC400128BAE /* TotalNBAUITests.swift */; };
 		A755820329279DC400128BAE /* TotalNBAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A755820229279DC400128BAE /* TotalNBAUITestsLaunchTests.swift */; };
 		A76750F5292FC55000DFCC0F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A76750F4292FC55000DFCC0F /* Alamofire */; };
-		A767C7D0294538DB00026DAD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7CF294538DB00026DAD /* NetworkManager.swift */; };
 		A767C7D22945411D00026DAD /* PlayerStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7D12945411D00026DAD /* PlayerStat.swift */; };
+		A767C7F12948FDE200026DAD /* PredictionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7F02948FDE200026DAD /* PredictionViewModel.swift */; };
+		A767C7F42948FE2600026DAD /* PredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7F32948FE2600026DAD /* PredictionService.swift */; };
+		A767C7F62948FE5400026DAD /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7F52948FE5400026DAD /* NetworkingManager.swift */; };
 		A7BB48F42927FFE80020802C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F32927FFE80020802C /* ModelData.swift */; };
 		A7BB48F6292800370020802C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F5292800370020802C /* Prediction.swift */; };
 		A7BB48F8292802100020802C /* PredictionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F7292802100020802C /* PredictionList.swift */; };
@@ -27,7 +29,6 @@
 		A7BB48FB2928091C0020802C /* predictionData.json in Resources */ = {isa = PBXBuildFile; fileRef = A7BB48F22927FFBA0020802C /* predictionData.json */; };
 		A7BB48FE292815EF0020802C /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = A7BB48FD292815EF0020802C /* FSCalendar */; };
 		A7C8489429367DAA0039E3BD /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8489329367DAA0039E3BD /* ErrorView.swift */; };
-		A7C8489629367E9A0039E3BD /* Predictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8489529367E9A0039E3BD /* Predictions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,15 +59,16 @@
 		A75581FC29279DC400128BAE /* TotalNBAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TotalNBAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A755820029279DC400128BAE /* TotalNBAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNBAUITests.swift; sourceTree = "<group>"; };
 		A755820229279DC400128BAE /* TotalNBAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNBAUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A767C7CF294538DB00026DAD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A767C7D12945411D00026DAD /* PlayerStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStat.swift; sourceTree = "<group>"; };
+		A767C7F02948FDE200026DAD /* PredictionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionViewModel.swift; sourceTree = "<group>"; };
+		A767C7F32948FE2600026DAD /* PredictionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionService.swift; sourceTree = "<group>"; };
+		A767C7F52948FE5400026DAD /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		A7BB48F22927FFBA0020802C /* predictionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = predictionData.json; sourceTree = "<group>"; };
 		A7BB48F32927FFE80020802C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A7BB48F5292800370020802C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
 		A7BB48F7292802100020802C /* PredictionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionList.swift; sourceTree = "<group>"; };
 		A7BB48F92928061C0020802C /* PredictionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionRow.swift; sourceTree = "<group>"; };
 		A7C8489329367DAA0039E3BD /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		A7C8489529367E9A0039E3BD /* Predictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,8 @@
 		A75581E429279DC200128BAE /* TotalNBA */ = {
 			isa = PBXGroup;
 			children = (
+				A767C7F22948FE1700026DAD /* Service */,
+				A767C7EF2948FDCE00026DAD /* ViewModel */,
 				A767C7CE294538CB00026DAD /* Networking */,
 				A7BB48F12927FF160020802C /* Resources */,
 				A7BB48F02927FF0F0020802C /* Model */,
@@ -161,9 +165,25 @@
 		A767C7CE294538CB00026DAD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				A767C7CF294538DB00026DAD /* NetworkManager.swift */,
+				A767C7F52948FE5400026DAD /* NetworkingManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		A767C7EF2948FDCE00026DAD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A767C7F02948FDE200026DAD /* PredictionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A767C7F22948FE1700026DAD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A767C7F32948FE2600026DAD /* PredictionService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		A7BB48EF2927FEFB0020802C /* Views */ = {
@@ -182,7 +202,6 @@
 			children = (
 				A7BB48F32927FFE80020802C /* ModelData.swift */,
 				A7BB48F5292800370020802C /* Prediction.swift */,
-				A7C8489529367E9A0039E3BD /* Predictions.swift */,
 				A767C7D12945411D00026DAD /* PlayerStat.swift */,
 			);
 			path = Model;
@@ -339,13 +358,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A767C7D0294538DB00026DAD /* NetworkManager.swift in Sources */,
 				A75581E829279DC200128BAE /* ContentView.swift in Sources */,
 				A7BB48F42927FFE80020802C /* ModelData.swift in Sources */,
 				A7BB48F8292802100020802C /* PredictionList.swift in Sources */,
+				A767C7F12948FDE200026DAD /* PredictionViewModel.swift in Sources */,
 				A7C8489429367DAA0039E3BD /* ErrorView.swift in Sources */,
-				A7C8489629367E9A0039E3BD /* Predictions.swift in Sources */,
 				A7BB48FA2928061C0020802C /* PredictionRow.swift in Sources */,
+				A767C7F62948FE5400026DAD /* NetworkingManager.swift in Sources */,
+				A767C7F42948FE2600026DAD /* PredictionService.swift in Sources */,
 				A75581E629279DC200128BAE /* TotalNBAApp.swift in Sources */,
 				A767C7D22945411D00026DAD /* PlayerStat.swift in Sources */,
 				A7BB48F6292800370020802C /* Prediction.swift in Sources */,

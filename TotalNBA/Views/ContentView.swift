@@ -10,6 +10,7 @@ import UIKit
 import FSCalendar
 
 struct ContentView: View {
+    @EnvironmentObject private var vm: PredictionViewModel
     @State var selectedDate: Date = Date()
     var selectedDateStr: String{
         let dateFormatter = DateFormatter()
@@ -19,20 +20,20 @@ struct ContentView: View {
         dateFormatter.dateFormat = "dd-MM-yyyy"
         return dateFormatter.string(from: selectedDate)
     }
-   
+    
     var body: some View {
-        VStack {
-        CalendarRepresentable(selectedDate: $selectedDate)
+        VStack{
+            CalendarRepresentable(selectedDate: $selectedDate)
                 .background(
                     RoundedRectangle(cornerRadius: 25.0)
                         .foregroundColor(.white)
                         .shadow(color: Color.black.opacity(0.2), radius: 6,
                                 x:0.0, y:0.0)
-                ).frame(height: 200)
+                ).frame(maxHeight: 150)
             
-            Text(selectedDateStr)
-            PredictionList(selectedDate: $selectedDate)
         }
+        PredictionList()
+        
     }
 }
 
@@ -40,14 +41,24 @@ struct CalendarRepresentable: UIViewRepresentable {
     typealias UIViewType = FSCalendar
     @Binding var selectedDate: Date
     var calendar = FSCalendar()
-
+    @EnvironmentObject private var vm: PredictionViewModel
+    var selectedDateStr: String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        dateFormatter.locale = Locale.current
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        return dateFormatter.string(from: selectedDate)
+    }
+    
+    
     func updateUIView(_ uiView: FSCalendar, context: Context) {}
     
     func makeUIView(context: Context) -> FSCalendar {
         calendar.delegate = context.coordinator
         calendar.dataSource = context.coordinator
         calendar.scope = .week
-        calendar.appearance.headerDateFormat = "yyyy/MM/dd"
+        //  calendar.appearance.headerDateFormat = "yyyy/MM/dd"
         return calendar
     }
     
@@ -63,16 +74,16 @@ struct CalendarRepresentable: UIViewRepresentable {
         }
         
         func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
-           return 1
+            return 1
         }
         
         func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
             parent.selectedDate = date
+            parent.vm.setDate(searchText: parent.selectedDateStr)
         }
         
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

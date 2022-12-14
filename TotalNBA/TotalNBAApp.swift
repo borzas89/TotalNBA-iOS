@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct TotalNBAApp: App {
+    @StateObject private var vm = PredictionViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(vm)
         }
     }
 }
