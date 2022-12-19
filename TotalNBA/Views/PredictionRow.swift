@@ -19,15 +19,13 @@ struct PredictionRow: View {
             }
             HStack{
                 VStack {
-                    
                     Image(prediction.awayTeamAlias.lowercased() )
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                     Text("\(prediction.predictedAwayScore, specifier: "%.2f")")
                         .font(.subheadline)
                         .foregroundColor(.black)
-                    
-                }
+                    }
                 Spacer()
                 VStack {
                     Text("\(prediction.predictedTotal, specifier: "%.2f")")

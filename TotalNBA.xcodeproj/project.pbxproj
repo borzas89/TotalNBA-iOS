@@ -33,6 +33,7 @@
 		A78F1E622950C8EB00BD092A /* PlayerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E612950C8EB00BD092A /* PlayerImageView.swift */; };
 		A78F1E642950CA1600BD092A /* PlayerImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E632950CA1600BD092A /* PlayerImageViewModel.swift */; };
 		A78F1E662950CA5900BD092A /* PlayerImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E652950CA5900BD092A /* PlayerImageService.swift */; };
+		A78F1E682950D56700BD092A /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E672950D56700BD092A /* LocalFileManager.swift */; };
 		A7BB48F42927FFE80020802C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F32927FFE80020802C /* ModelData.swift */; };
 		A7BB48F6292800370020802C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F5292800370020802C /* Prediction.swift */; };
 		A7BB48F8292802100020802C /* PredictionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F7292802100020802C /* PredictionList.swift */; };
@@ -86,6 +87,7 @@
 		A78F1E612950C8EB00BD092A /* PlayerImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerImageView.swift; sourceTree = "<group>"; };
 		A78F1E632950CA1600BD092A /* PlayerImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerImageViewModel.swift; sourceTree = "<group>"; };
 		A78F1E652950CA5900BD092A /* PlayerImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerImageService.swift; sourceTree = "<group>"; };
+		A78F1E672950D56700BD092A /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		A7BB48F22927FFBA0020802C /* predictionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = predictionData.json; sourceTree = "<group>"; };
 		A7BB48F32927FFE80020802C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A7BB48F5292800370020802C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			children = (
 				A767C802294A789500026DAD /* UIApplication.swift */,
 				A78F1E58295078F900BD092A /* Color.swift */,
+				A78F1E672950D56700BD092A /* LocalFileManager.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				A75581E629279DC200128BAE /* TotalNBAApp.swift in Sources */,
 				A767C7D22945411D00026DAD /* PlayerStat.swift in Sources */,
 				A7BB48F6292800370020802C /* Prediction.swift in Sources */,
+				A78F1E682950D56700BD092A /* LocalFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

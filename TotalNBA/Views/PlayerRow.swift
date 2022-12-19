@@ -10,30 +10,36 @@ import SwiftUI
 struct PlayerRow: View {
     var playerStat: PlayerStat
     var body: some View {
-        VStack{
-            HStack{
+        VStack(alignment: .leading){
+            HStack {
                 PlayerImageView(player: playerStat)
                     .frame(width: 100, height: 100)
+                    .aspectRatio(contentMode: .fit)
                 Text(playerStat.full_name)
-                Text(playerStat.team)
+                    .font(.subheadline).bold()
+                    .foregroundColor(.black)
+                Text(playerStat.team).bold()
             }
+            
             HStack{
-                Text("Points/game  ")
-                Text("\(String(format: "%.1f", playerStat.points_per_game))")
+                Text("Points per game  ")
+                Text("\(playerStat.points_per_game, specifier: "%.2f")")
             }
+            
             HStack{
-                Text("Rebounds/game  ")
-                Text("\(String(format: "%.1f", playerStat.rebounds_per_game))")
+                Text("Rebounds:  ")
+                Text("\(playerStat.rebounds_per_game, specifier: "%.2f")")
             }
+            
             HStack{
-                Text("Assists/game  ")
-                Text("\(String(format: "%.1f", playerStat.assists_per_game))")
+                Text("Assists:  ")
+                Text("\(playerStat.assists_per_game, specifier: "%.2f")")
             }
+            
             HStack{
-                Text("Steals/game  ")
-                Text("\(String(format: "%.2f", playerStat.steals_per_game))")
+                Text("Steals: ")
+                Text("\(playerStat.steals_per_game, specifier: "%.2f")")
             }
-            Divider()
         }
     }
 }

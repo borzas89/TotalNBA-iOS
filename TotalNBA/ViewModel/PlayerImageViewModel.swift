@@ -31,6 +31,5 @@ class PlayerImageViewModel: ObservableObject {
             }
             .store(in: &cancellables)
     }
-    
-    
+
 }
