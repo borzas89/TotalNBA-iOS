@@ -12,6 +12,8 @@ struct PlayerRow: View {
     var body: some View {
         VStack{
             HStack{
+                PlayerImageView(player: playerStat)
+                    .frame(width: 100, height: 100)
                 Text(playerStat.full_name)
                 Text(playerStat.team)
             }

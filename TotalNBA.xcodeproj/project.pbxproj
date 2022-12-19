@@ -30,6 +30,9 @@
 		A78F1E59295078F900BD092A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E58295078F900BD092A /* Color.swift */; };
 		A78F1E5B29507FD400BD092A /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E5A29507FD400BD092A /* PlayerRow.swift */; };
 		A78F1E5D295080AD00BD092A /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E5C295080AD00BD092A /* PlayerService.swift */; };
+		A78F1E622950C8EB00BD092A /* PlayerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E612950C8EB00BD092A /* PlayerImageView.swift */; };
+		A78F1E642950CA1600BD092A /* PlayerImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E632950CA1600BD092A /* PlayerImageViewModel.swift */; };
+		A78F1E662950CA5900BD092A /* PlayerImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E652950CA5900BD092A /* PlayerImageService.swift */; };
 		A7BB48F42927FFE80020802C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F32927FFE80020802C /* ModelData.swift */; };
 		A7BB48F6292800370020802C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F5292800370020802C /* Prediction.swift */; };
 		A7BB48F8292802100020802C /* PredictionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F7292802100020802C /* PredictionList.swift */; };
@@ -80,6 +83,9 @@
 		A78F1E5A29507FD400BD092A /* PlayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRow.swift; sourceTree = "<group>"; };
 		A78F1E5C295080AD00BD092A /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
 		A78F1E5F295098D500BD092A /* playerStatData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = playerStatData.json; sourceTree = "<group>"; };
+		A78F1E612950C8EB00BD092A /* PlayerImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerImageView.swift; sourceTree = "<group>"; };
+		A78F1E632950CA1600BD092A /* PlayerImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerImageViewModel.swift; sourceTree = "<group>"; };
+		A78F1E652950CA5900BD092A /* PlayerImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerImageService.swift; sourceTree = "<group>"; };
 		A7BB48F22927FFBA0020802C /* predictionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = predictionData.json; sourceTree = "<group>"; };
 		A7BB48F32927FFE80020802C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A7BB48F5292800370020802C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
@@ -193,6 +199,7 @@
 			children = (
 				A767C7F02948FDE200026DAD /* PredictionViewModel.swift */,
 				A767C804294A7B2800026DAD /* PlayerSearchViewModel.swift */,
+				A78F1E632950CA1600BD092A /* PlayerImageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -202,6 +209,7 @@
 			children = (
 				A767C7F32948FE2600026DAD /* PredictionService.swift */,
 				A78F1E5C295080AD00BD092A /* PlayerService.swift */,
+				A78F1E652950CA5900BD092A /* PlayerImageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -215,16 +223,25 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		A78F1E602950C8C300BD092A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A7C8489329367DAA0039E3BD /* ErrorView.swift */,
+				A767C7FD294A777800026DAD /* SearchBarView.swift */,
+				A78F1E612950C8EB00BD092A /* PlayerImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		A7BB48EF2927FEFB0020802C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A78F1E602950C8C300BD092A /* Components */,
 				A75581E729279DC200128BAE /* ContentView.swift */,
 				A7BB48F7292802100020802C /* PredictionList.swift */,
 				A7BB48F92928061C0020802C /* PredictionRow.swift */,
-				A7C8489329367DAA0039E3BD /* ErrorView.swift */,
 				A767C7F9294A185200026DAD /* ResultView.swift */,
 				A767C7FB294A1EDB00026DAD /* PlayerSearchView.swift */,
-				A767C7FD294A777800026DAD /* SearchBarView.swift */,
 				A78F1E5A29507FD400BD092A /* PlayerRow.swift */,
 			);
 			path = Views;
@@ -398,6 +415,7 @@
 				A767C803294A789500026DAD /* UIApplication.swift in Sources */,
 				A78F1E59295078F900BD092A /* Color.swift in Sources */,
 				A7BB48F8292802100020802C /* PredictionList.swift in Sources */,
+				A78F1E642950CA1600BD092A /* PlayerImageViewModel.swift in Sources */,
 				A767C805294A7B2800026DAD /* PlayerSearchViewModel.swift in Sources */,
 				A767C7F12948FDE200026DAD /* PredictionViewModel.swift in Sources */,
 				A78F1E5D295080AD00BD092A /* PlayerService.swift in Sources */,
@@ -407,7 +425,9 @@
 				A78F1E5B29507FD400BD092A /* PlayerRow.swift in Sources */,
 				A767C7F62948FE5400026DAD /* NetworkingManager.swift in Sources */,
 				A767C7F42948FE2600026DAD /* PredictionService.swift in Sources */,
+				A78F1E622950C8EB00BD092A /* PlayerImageView.swift in Sources */,
 				A767C7FE294A777800026DAD /* SearchBarView.swift in Sources */,
+				A78F1E662950CA5900BD092A /* PlayerImageService.swift in Sources */,
 				A75581E629279DC200128BAE /* TotalNBAApp.swift in Sources */,
 				A767C7D22945411D00026DAD /* PlayerStat.swift in Sources */,
 				A7BB48F6292800370020802C /* Prediction.swift in Sources */,
