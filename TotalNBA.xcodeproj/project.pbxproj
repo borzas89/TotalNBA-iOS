@@ -22,6 +22,14 @@
 		A767C7F12948FDE200026DAD /* PredictionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7F02948FDE200026DAD /* PredictionViewModel.swift */; };
 		A767C7F42948FE2600026DAD /* PredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7F32948FE2600026DAD /* PredictionService.swift */; };
 		A767C7F62948FE5400026DAD /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7F52948FE5400026DAD /* NetworkingManager.swift */; };
+		A767C7FA294A185200026DAD /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7F9294A185200026DAD /* ResultView.swift */; };
+		A767C7FC294A1EDB00026DAD /* PlayerSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7FB294A1EDB00026DAD /* PlayerSearchView.swift */; };
+		A767C7FE294A777800026DAD /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C7FD294A777800026DAD /* SearchBarView.swift */; };
+		A767C803294A789500026DAD /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C802294A789500026DAD /* UIApplication.swift */; };
+		A767C805294A7B2800026DAD /* PlayerSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767C804294A7B2800026DAD /* PlayerSearchViewModel.swift */; };
+		A78F1E59295078F900BD092A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E58295078F900BD092A /* Color.swift */; };
+		A78F1E5B29507FD400BD092A /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E5A29507FD400BD092A /* PlayerRow.swift */; };
+		A78F1E5D295080AD00BD092A /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E5C295080AD00BD092A /* PlayerService.swift */; };
 		A7BB48F42927FFE80020802C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F32927FFE80020802C /* ModelData.swift */; };
 		A7BB48F6292800370020802C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F5292800370020802C /* Prediction.swift */; };
 		A7BB48F8292802100020802C /* PredictionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F7292802100020802C /* PredictionList.swift */; };
@@ -63,6 +71,15 @@
 		A767C7F02948FDE200026DAD /* PredictionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionViewModel.swift; sourceTree = "<group>"; };
 		A767C7F32948FE2600026DAD /* PredictionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionService.swift; sourceTree = "<group>"; };
 		A767C7F52948FE5400026DAD /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		A767C7F9294A185200026DAD /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		A767C7FB294A1EDB00026DAD /* PlayerSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSearchView.swift; sourceTree = "<group>"; };
+		A767C7FD294A777800026DAD /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		A767C802294A789500026DAD /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		A767C804294A7B2800026DAD /* PlayerSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSearchViewModel.swift; sourceTree = "<group>"; };
+		A78F1E58295078F900BD092A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A78F1E5A29507FD400BD092A /* PlayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRow.swift; sourceTree = "<group>"; };
+		A78F1E5C295080AD00BD092A /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
+		A78F1E5F295098D500BD092A /* playerStatData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = playerStatData.json; sourceTree = "<group>"; };
 		A7BB48F22927FFBA0020802C /* predictionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = predictionData.json; sourceTree = "<group>"; };
 		A7BB48F32927FFE80020802C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A7BB48F5292800370020802C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
@@ -124,6 +141,7 @@
 		A75581E429279DC200128BAE /* TotalNBA */ = {
 			isa = PBXGroup;
 			children = (
+				A767C7FF294A785900026DAD /* Extension */,
 				A767C7F22948FE1700026DAD /* Service */,
 				A767C7EF2948FDCE00026DAD /* ViewModel */,
 				A767C7CE294538CB00026DAD /* Networking */,
@@ -174,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				A767C7F02948FDE200026DAD /* PredictionViewModel.swift */,
+				A767C804294A7B2800026DAD /* PlayerSearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -182,8 +201,18 @@
 			isa = PBXGroup;
 			children = (
 				A767C7F32948FE2600026DAD /* PredictionService.swift */,
+				A78F1E5C295080AD00BD092A /* PlayerService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		A767C7FF294A785900026DAD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A767C802294A789500026DAD /* UIApplication.swift */,
+				A78F1E58295078F900BD092A /* Color.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		A7BB48EF2927FEFB0020802C /* Views */ = {
@@ -193,6 +222,10 @@
 				A7BB48F7292802100020802C /* PredictionList.swift */,
 				A7BB48F92928061C0020802C /* PredictionRow.swift */,
 				A7C8489329367DAA0039E3BD /* ErrorView.swift */,
+				A767C7F9294A185200026DAD /* ResultView.swift */,
+				A767C7FB294A1EDB00026DAD /* PlayerSearchView.swift */,
+				A767C7FD294A777800026DAD /* SearchBarView.swift */,
+				A78F1E5A29507FD400BD092A /* PlayerRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				A7BB48F22927FFBA0020802C /* predictionData.json */,
+				A78F1E5F295098D500BD092A /* playerStatData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -358,14 +392,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A767C7FC294A1EDB00026DAD /* PlayerSearchView.swift in Sources */,
 				A75581E829279DC200128BAE /* ContentView.swift in Sources */,
 				A7BB48F42927FFE80020802C /* ModelData.swift in Sources */,
+				A767C803294A789500026DAD /* UIApplication.swift in Sources */,
+				A78F1E59295078F900BD092A /* Color.swift in Sources */,
 				A7BB48F8292802100020802C /* PredictionList.swift in Sources */,
+				A767C805294A7B2800026DAD /* PlayerSearchViewModel.swift in Sources */,
 				A767C7F12948FDE200026DAD /* PredictionViewModel.swift in Sources */,
+				A78F1E5D295080AD00BD092A /* PlayerService.swift in Sources */,
 				A7C8489429367DAA0039E3BD /* ErrorView.swift in Sources */,
+				A767C7FA294A185200026DAD /* ResultView.swift in Sources */,
 				A7BB48FA2928061C0020802C /* PredictionRow.swift in Sources */,
+				A78F1E5B29507FD400BD092A /* PlayerRow.swift in Sources */,
 				A767C7F62948FE5400026DAD /* NetworkingManager.swift in Sources */,
 				A767C7F42948FE2600026DAD /* PredictionService.swift in Sources */,
+				A767C7FE294A777800026DAD /* SearchBarView.swift in Sources */,
 				A75581E629279DC200128BAE /* TotalNBAApp.swift in Sources */,
 				A767C7D22945411D00026DAD /* PlayerStat.swift in Sources */,
 				A7BB48F6292800370020802C /* Prediction.swift in Sources */,

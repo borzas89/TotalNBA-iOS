@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "full_name": "A.J. Green",
+        "team": "MIL",
+        "pics_id": "203924",
+        "temporary_name": "Green, A.J.",
+        "position": "G",
+        "game_played": 12,
+        "points_per_game": 3.2,
+        "rebounds_per_game": 0.7,
+        "assists_per_game": 0.3,
+        "steals_per_game": 0.08
+    },
+    {
+        "id": 2,
+        "full_name": "A.J. Lawson",
+        "team": "MIN",
+        "pics_id": "203897",
+        "temporary_name": "Lawson, A.J.",
+        "position": "G",
+        "game_played": 1,
+        "points_per_game": 2,
+        "rebounds_per_game": 1,
+        "assists_per_game": 0,
+        "steals_per_game": 0
+    },
+    {
+        "id": 3,
+        "full_name": "Aaron Gordon",
+        "team": "DEN",
+        "pics_id": "203932",
+        "temporary_name": "Gordon, Aaron",
+        "position": "F",
+        "game_played": 25,
+        "points_per_game": 16.9,
+        "rebounds_per_game": 6.3,
+        "assists_per_game": 2.1,
+        "steals_per_game": 0.8
+    },
+    {
+        "id": 4,
+        "full_name": "Aaron Holiday",
+        "team": "ATL",
+        "pics_id": "1628988",
+        "temporary_name": "Holiday, Aaron",
+        "position": "G",
+        "game_played": 26,
+        "points_per_game": 5.3,
+        "rebounds_per_game": 1.6,
+        "assists_per_game": 1.7,
+        "steals_per_game": 0.81
+    }
+]
+

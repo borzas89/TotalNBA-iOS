@@ -8,6 +8,7 @@
 import Foundation
 
 var predictions: [Prediction] = load("predictionData.json")
+var playerStats: [PlayerStat] = load("playerStatData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
