@@ -13,11 +13,13 @@ struct PredictionList: View {
     @State var predictions: [Prediction] = []
     
     var body: some View {
-        List(){
-            ForEach(vm.predictions) { prediction in
-                PredictionRow(prediction: prediction)
+            List(){
+                ForEach(vm.predictions) { prediction in
+                        PredictionRow(prediction: prediction)
+                            .listRowSeparator(.hidden)
+                }
             }
-        }
+            
     }
 }
 

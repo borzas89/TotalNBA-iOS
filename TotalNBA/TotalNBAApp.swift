@@ -12,7 +12,10 @@ struct TotalNBAApp: App {
     @StateObject private var vm = PredictionViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(vm)
+            NavigationView{
+                ContentView()
+                    .environmentObject(vm)
+            }
         }
     }
 }

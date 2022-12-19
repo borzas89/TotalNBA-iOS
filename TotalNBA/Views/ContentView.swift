@@ -10,21 +10,33 @@ import UIKit
 import FSCalendar
 
 struct ContentView: View {
-    @EnvironmentObject private var vm: PredictionViewModel
     @State var selectedDate: Date = Date()
+    @EnvironmentObject private var vm: PredictionViewModel
+    @State var predictions: [Prediction] = []
     
     var body: some View {
-        VStack{
-            CalendarRepresentable(selectedDate: $selectedDate)
-                .background(
-                    RoundedRectangle(cornerRadius: 25.0)
-                        .foregroundColor(.white)
-                        .shadow(color: Color.black.opacity(0.2), radius: 6,
-                                x:0.0, y:0.0)
-                ).frame(maxHeight: 150)
-            
-        }
-        PredictionList()
+            VStack{
+                CalendarRepresentable(selectedDate: $selectedDate)
+                    .background(
+                        RoundedRectangle(cornerRadius: 25.0)
+                            .foregroundColor(.white)
+                            .shadow(color: Color.black.opacity(0.2), radius: 6,
+                                    x:0.0, y:0.0)
+                    ).frame(maxHeight: 150)
+                NavigationLink(destination: PlayerSearchView()
+                    .environmentObject(vm)){
+                 Text("Search")
+                }
+
+                List(){
+                    ForEach(vm.predictions) { prediction in
+                            PredictionRow(prediction: prediction)
+                                .listRowSeparator(.hidden)
+                        }
+                }
+                
+            }
+        
         
     }
 }
@@ -50,7 +62,6 @@ struct CalendarRepresentable: UIViewRepresentable {
         calendar.delegate = context.coordinator
         calendar.dataSource = context.coordinator
         calendar.scope = .week
-        //  calendar.appearance.headerDateFormat = "yyyy/MM/dd"
         return calendar
     }
     

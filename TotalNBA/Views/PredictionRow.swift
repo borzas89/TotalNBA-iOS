@@ -9,45 +9,48 @@ import SwiftUI
 
 struct PredictionRow: View {
     var prediction: Prediction
-
+    
     var body: some View {
-    VStack {
-        HStack{
-            Text(prediction.awayTeamName + " @ " + prediction.homeTeamName)
-                           .font(.subheadline)
-                           .foregroundColor(.black)
+        VStack {
+            HStack{
+                Text(prediction.awayTeamName + " @ " + prediction.homeTeamName)
+                    .font(.subheadline)
+                    .foregroundColor(.black)
+            }
+            HStack{
+                VStack {
+                    
+                    Image(prediction.awayTeamAlias.lowercased() )
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Text("\(prediction.predictedAwayScore, specifier: "%.2f")")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                    
+                }
+                Spacer()
+                VStack {
+                    Text("\(prediction.predictedTotal, specifier: "%.2f")")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                    Text("\(prediction.spread, specifier: "%.2f")")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                }
+                Spacer()
+                VStack {
+                    Image( prediction.homeTeamAlias.lowercased())
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Text("\(prediction.predictedHomeScore, specifier: "%.2f")")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                }
+            }
+            Divider()
         }
-        HStack{
-               VStack {
-                   Image(prediction.awayTeamAlias.lowercased() )
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                   Text("\(prediction.predictedAwayScore, specifier: "%.2f")")
-                       .font(.subheadline)
-                       .foregroundColor(.black)
-               }
-                Spacer()
-               VStack {
-                   Text("\(prediction.predictedTotal, specifier: "%.2f")")
-                       .font(.subheadline)
-                       .foregroundColor(.black)
-                   Text("\(prediction.spread, specifier: "%.2f")")
-                       .font(.subheadline)
-                       .foregroundColor(.black)
-               }
-                Spacer()
-               VStack {
-                   Image( prediction.homeTeamAlias.lowercased())
-                       .resizable()
-                       .aspectRatio(contentMode: .fit)
-                   Text("\(prediction.predictedHomeScore, specifier: "%.2f")")
-                       .font(.subheadline)
-                       .foregroundColor(.black)
-               }
-           }
-    }.padding()
-            
-
+        
+        
     }
 }
 
