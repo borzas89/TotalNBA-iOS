@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7259E9B2927BAC000869A6A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A7259E9A2927BAC000869A6A /* FirebaseAnalytics */; };
-		A7259E9D2927BAC000869A6A /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A7259E9C2927BAC000869A6A /* FirebaseAppDistribution-Beta */; };
-		A7259E9F2927BAC000869A6A /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = A7259E9E2927BAC000869A6A /* FirebaseCrashlytics */; };
 		A75581E629279DC200128BAE /* TotalNBAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75581E529279DC200128BAE /* TotalNBAApp.swift */; };
 		A75581E829279DC200128BAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75581E729279DC200128BAE /* ContentView.swift */; };
 		A75581EA29279DC400128BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75581E929279DC400128BAE /* Assets.xcassets */; };
@@ -34,6 +31,8 @@
 		A78F1E642950CA1600BD092A /* PlayerImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E632950CA1600BD092A /* PlayerImageViewModel.swift */; };
 		A78F1E662950CA5900BD092A /* PlayerImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E652950CA5900BD092A /* PlayerImageService.swift */; };
 		A78F1E682950D56700BD092A /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E672950D56700BD092A /* LocalFileManager.swift */; };
+		A78F1E6D2950F6F200BD092A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78F1E6C2950F6F200BD092A /* LaunchScreen.storyboard */; };
+		A78F1E6F2951055800BD092A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F1E6E2951055800BD092A /* LaunchView.swift */; };
 		A7BB48F42927FFE80020802C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F32927FFE80020802C /* ModelData.swift */; };
 		A7BB48F6292800370020802C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F5292800370020802C /* Prediction.swift */; };
 		A7BB48F8292802100020802C /* PredictionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB48F7292802100020802C /* PredictionList.swift */; };
@@ -88,6 +87,8 @@
 		A78F1E632950CA1600BD092A /* PlayerImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerImageViewModel.swift; sourceTree = "<group>"; };
 		A78F1E652950CA5900BD092A /* PlayerImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerImageService.swift; sourceTree = "<group>"; };
 		A78F1E672950D56700BD092A /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		A78F1E6C2950F6F200BD092A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A78F1E6E2951055800BD092A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		A7BB48F22927FFBA0020802C /* predictionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = predictionData.json; sourceTree = "<group>"; };
 		A7BB48F32927FFE80020802C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A7BB48F5292800370020802C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
@@ -102,10 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A76750F5292FC55000DFCC0F /* Alamofire in Frameworks */,
-				A7259E9F2927BAC000869A6A /* FirebaseCrashlytics in Frameworks */,
 				A7BB48FE292815EF0020802C /* FSCalendar in Frameworks */,
-				A7259E9B2927BAC000869A6A /* FirebaseAnalytics in Frameworks */,
-				A7259E9D2927BAC000869A6A /* FirebaseAppDistribution-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +147,7 @@
 		A75581E429279DC200128BAE /* TotalNBA */ = {
 			isa = PBXGroup;
 			children = (
+				A78F1E6A2950F6D400BD092A /* Launch */,
 				A767C7FF294A785900026DAD /* Extension */,
 				A767C7F22948FE1700026DAD /* Service */,
 				A767C7EF2948FDCE00026DAD /* ViewModel */,
@@ -236,6 +235,23 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		A78F1E6A2950F6D400BD092A /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				A78F1E6B2950F6DC00BD092A /* Views */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		A78F1E6B2950F6DC00BD092A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A78F1E6C2950F6F200BD092A /* LaunchScreen.storyboard */,
+				A78F1E6E2951055800BD092A /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A7BB48EF2927FEFB0020802C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,9 +302,6 @@
 			);
 			name = TotalNBA;
 			packageProductDependencies = (
-				A7259E9A2927BAC000869A6A /* FirebaseAnalytics */,
-				A7259E9C2927BAC000869A6A /* FirebaseAppDistribution-Beta */,
-				A7259E9E2927BAC000869A6A /* FirebaseCrashlytics */,
 				A7BB48FD292815EF0020802C /* FSCalendar */,
 				A76750F4292FC55000DFCC0F /* Alamofire */,
 			);
@@ -386,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A75581ED29279DC400128BAE /* Preview Assets.xcassets in Resources */,
+				A78F1E6D2950F6F200BD092A /* LaunchScreen.storyboard in Resources */,
 				A75581EA29279DC400128BAE /* Assets.xcassets in Resources */,
 				A7BB48FB2928091C0020802C /* predictionData.json in Resources */,
 			);
@@ -413,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A767C7FC294A1EDB00026DAD /* PlayerSearchView.swift in Sources */,
+				A78F1E6F2951055800BD092A /* LaunchView.swift in Sources */,
 				A75581E829279DC200128BAE /* ContentView.swift in Sources */,
 				A7BB48F42927FFE80020802C /* ModelData.swift in Sources */,
 				A767C803294A789500026DAD /* UIApplication.swift in Sources */,
@@ -521,6 +536,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=*]" = "";
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -575,6 +593,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -598,7 +617,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=*]" = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=*]" = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -627,7 +649,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=*]" = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -784,21 +808,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A7259E9A2927BAC000869A6A /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A7259E992927BAC000869A6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		A7259E9C2927BAC000869A6A /* FirebaseAppDistribution-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A7259E992927BAC000869A6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseAppDistribution-Beta";
-		};
-		A7259E9E2927BAC000869A6A /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A7259E992927BAC000869A6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
 		A76750F4292FC55000DFCC0F /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A76750F3292FC54F00DFCC0F /* XCRemoteSwiftPackageReference "Alamofire" */;

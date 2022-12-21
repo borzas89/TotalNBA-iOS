@@ -27,7 +27,6 @@ struct ContentView: View {
                     .environmentObject(vm)){
                  Text("Search")
                 }
-
                 List(){
                     ForEach(vm.predictions) { prediction in
                             PredictionRow(prediction: prediction)

@@ -10,11 +10,23 @@ import SwiftUI
 @main
 struct TotalNBAApp: App {
     @StateObject private var vm = PredictionViewModel()
+    @State private var showLaunchView: Bool = true
+
     var body: some Scene {
         WindowGroup {
-            NavigationView{
-                ContentView()
-                    .environmentObject(vm)
+            ZStack{
+                NavigationView{
+                    ContentView()
+                }
+                .environmentObject(vm)
+                
+                ZStack {
+                    if showLaunchView {
+                        LaunchView(showLaunchView: $showLaunchView)
+                            .transition(.move(edge: .leading))
+                    }
+                }
+                .zIndex(2.0)
             }
         }
     }

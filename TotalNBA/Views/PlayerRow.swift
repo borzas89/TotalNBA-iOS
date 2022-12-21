@@ -13,7 +13,7 @@ struct PlayerRow: View {
         VStack(alignment: .leading){
             HStack {
                 PlayerImageView(player: playerStat)
-                    .frame(width: 100, height: 100)
+                    .frame(width: 120, height: 120)
                     .aspectRatio(contentMode: .fit)
                 Text(playerStat.full_name)
                     .font(.subheadline).bold()
