@@ -19,6 +19,7 @@ class PredictionViewModel : ObservableObject{
     private let playerStatService = PlayerService()
     
     init() {
+        self.isLoading = true
         addSubscribers()
     }
     

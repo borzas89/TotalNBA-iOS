@@ -13,13 +13,16 @@ struct PredictionList: View {
     @State var predictions: [Prediction] = []
     
     var body: some View {
+        if vm.isLoading{
+            ProgressView()
+        } else{
             List(){
                 ForEach(vm.predictions) { prediction in
                         PredictionRow(prediction: prediction)
                             .listRowSeparator(.hidden)
                 }
             }
-            
+        }
     }
 }
 
